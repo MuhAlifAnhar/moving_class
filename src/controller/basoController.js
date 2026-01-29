@@ -53,7 +53,7 @@ const updateData = async (req, res) => {
         const query = 'UPDATE product SET nama = ?, harga = ? WHERE id = ?';
         await db.execute(query, [data.nama, data.harga, id]);
         return res.status(200).json({
-            message: 'berhasil update data'
+            message: 'elzhard berhasil mengupdate'
         })
     } catch (error) {
         throw error
