@@ -36,7 +36,7 @@ const createData = async (req, res) => {
         const query = 'INSERT INTO product (nama, harga) VALUE (?, ?)';
         await db.execute(query, [data.nama, data.harga]);
         return res.status(201).json({
-            message: 'berhasil simpan data di database'
+            message: 'Afiqri berhasil buat data'
         })
     } catch (error) {
         throw error
