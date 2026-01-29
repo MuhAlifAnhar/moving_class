@@ -66,7 +66,7 @@ const deleteData = async (req, res) => {
         const query = 'DELETE FROM product WHERE id = ?';
         await db.query(query, id);
         return res.status(201).json({
-            message: 'berhasil delete data'
+            message: 'mikail berhasil delete data'
         })
     } catch (error) {
         throw error
