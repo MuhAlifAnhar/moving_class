@@ -5,7 +5,7 @@ const tampilData = async (req, res) => {
         const query = 'SELECT * FROM product';
         const [rows] = await db.query(query);
         await res.status(200).json({
-            message: 'berhasil get data',
+            message: 'obam berhasil get data',
             data: rows
         })
     } catch(error){
