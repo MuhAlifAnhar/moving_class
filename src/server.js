@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express()
-const Port = 3006;
+const Port = 3000;
 const router = require('./router/router')
 
 app.use(express.json());
